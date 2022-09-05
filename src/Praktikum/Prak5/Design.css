@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Signika+Negative:wght@700&family=Yanone+Kaffeesatz:wght@700&display=swap');
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+body {
+    background-color: white;
+    font-size: 1.14em;
+    font-family: 'Signika Negative', sans-serif;
+}
+.topnav {
+    font-family: 'Signika Negative', sans-serif;
+    text-align: center;
+    padding: 1% 0;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
+}
+.topnav .active {
+    text-decoration: underline;
+}
+.topnav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 1%;
+}
+header {
+    background-size: cover;
+    background-position: center;
+    background-image: url("./image_background.jpg");
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 5em;
+    padding: 0.7em 0;
+    color: white;
+}
+h2 {
+    text-align: center;
+    padding: 0.8em;
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+    font-size: 200%;
+}
+h3 {
+    text-align: center;
+    font-size: 1.7em;
+    padding: 0.3em;
+}
+.pizza_item {
+    padding: 0.6em 0;
+    text-align: center;
+}
+.pizza_image {
+    border-radius: 7%;
+    width: 55%;
+    max-width: 19.18em;
+    height: auto;
+}
+.pizza_name {
+    display: block;
+}
+.abstand {
+    padding: 0.3em 0;
+}
+.warenkorb {
+    border: 0.1em solid lightgray;
+    border-radius: 0.4em;
+    margin: 1.1em;
+    padding: 1.1em;
+}
+form{
+    text-align: center;
+    margin: 0.05em 0;
+}
+.address{
+    font-family: 'Signika Negative', sans-serif;
+}
+.address_box {
+    border-bottom: 0.1em solid grey;
+    margin: 0.3em 0;
+    width: 100%;
+}
+.button {
+    padding: 0.15em 0.3em;
+    margin: 0.3em;
+    color: white;
+    background-color: grey;
+    border-radius: 0.4em;
+}
+.button[disabled] {
+    background-color: lightgray;
+}
+fieldset{
+    margin: 0 1em;
+    border: 0.07em solid lightgray;
+    border-radius: 0.3em;
+    padding-bottom: 0.9em;
+}
+.bestellung{
+    padding: 0.5em;
+}
+label{
+    font-family:'Raleway', sans-serif;
+    padding-right: 4%;
+}
+option{
+    font-family:'Raleway', sans-serif;
+}
+span{
+    font-family:'Raleway', sans-serif;
+}
+b{
+    margin-top: 1em;
+}
+input[type="radio"]{
+    width: 1em;
+    height: 1em;
+    border: 0.06em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(0.08em);
+    place-content: center;
+}
+.form_fahrer{
+    margin: 1em 0;
+}
+.delivery_status{
+    text-align: center;
+    font-size: 1.3em;
+}
+div{
+    padding: 0.5em;
+}
+.new_order_button{
+    padding: 2em;
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-direction: row;
+    }
+    .warenkorb {
+        margin-top: 2.2em;
+        width: 30%;
+        margin-right: 5%;
+    }
+    .pizza_image {
+        max-width: 30.15em;
+        height: auto;
+    }
+    header {
+        padding: 5.5em;
+    }
+    .topnav a {
+        padding-right: 5%;
+        font-size: 120%;
+    }
+    fieldset{
+        font-size: 1.5em;
+        padding: 2% 0;
+    }
+}

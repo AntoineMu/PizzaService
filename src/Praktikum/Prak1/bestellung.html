@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">  
+<head>
+    <meta charset="UTF-8" />
+    <!-- für später: CSS include -->
+    <!-- <link rel="stylesheet" href="XXX.css"/> -->
+    <!-- für später: JavaScript include -->
+    <!-- <script src="XXX.js"></script> -->
+    <title>Bestellung</title>
+</head>
+<body>
+    
+    <section>
+        <h2>Speisekarte</h2>
+        <article>
+            <img src="bilder/PizzaSalami.gif" width="250" height="250" alt="" title="Salami Pizza" />
+            <br>Pizza Salami
+            <br>4,50€
+        </article>
+
+        <article>
+            <img src="bilder/PizzaMagherita.gif" width="250" height="250" alt="" title="Salami Pizza" />
+            <br>Pizza Magherita
+            <br>4,00€
+        </article>
+
+        <article>
+            <img src="bilder/PizzaHawaii.gif" width="250" height="250" alt="" title="Salami Pizza" />
+            <br>Pizza Hawaii
+            <br>5,00€
+        </article>
+    </section>
+
+    
+    <section>
+        <h2>Warenkorb</h2>
+        <form action="https://echo.fbi.h-da.de/" method="post">   
+            <select Name="Warenkorb" Size="3">  
+                <option> Salami </option>  
+                <option> Magherita </option>  
+                <option> Hawaii </option>   
+            </select> 
+
+            <br>14.50€
+            <br>
+            <input type="text" name="adresse" value="" size="30" maxlength="40" placeholder="Ihre Adresse" required/>
+            <input type="reset" name="löschen" value="Alle Löschen">
+            <input type="submit" name="bestellen" value="Bestellen">
+        </form> 
+
+        
+
+    </section>
+
+</body>
